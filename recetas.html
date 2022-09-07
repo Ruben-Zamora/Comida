@@ -1,44 +1,395 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <title>Recetas favoritas</title>
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
-        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
-        <link rel="stylesheet" href="style.css">
-    </head>
-    <body>
-        <nav class="navbar navbar-expand-lg bg-info">
-            <div class="container-fluid">
-              <label class="navbar-brand col-9">Comidas preferidas</label>
-              <button class="navbar-toggler navbar-toggler-right" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-              </button>
-              <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav flex-row ml-auto justify-content-between">
-                  <li class="nav-item">
-                    <a class="btn btn-danger" aria-current="page" href="index.html">
-                        <i class="bi-box2-heart"></i> Inicio
-                    </a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="btn btn-danger active disabled" href="recetas.html">
-                        <i class="bi bi-cup-hot"></i> Recetas
-                    </a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="btn btn-danger" href="informacion.html">
-                        <i class="bi-bookmarks-fill"></i> Historia
-                    </a>
-                  </li>
-                </ul>
-              </div>
-            </div>
-          </nav>
-    </body>
-    <div class="row">
-        <div class="col-sm-12 col-md-6 col-lg-6">
-          
+  <head>
+    <title>Recetas favoritas</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <header>
+      <nav class="navbar navbar-expand-lg bg-info">
+        <div class="container-fluid">
+          <label class="navbar-brand col-8">Comidas preferidas</label>
+          <button class="navbar-toggler navbar-toggler-right" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav flex-row ml-auto justify-content-between">
+              <li class="nav-item">
+                <a class="btn btn-danger" aria-current="page" href="index.html">
+                    <i class="bi-box2-heart"></i> Inicio
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="btn btn-danger active disabled" href="recetas.html">
+                    <i class="bi bi-cup-hot"></i> Recetas
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="btn btn-danger" href="informacion.html">
+                    <i class="bi-bookmarks-fill"></i> Ubicaciones
+                </a>
+              </li>
+            </ul>
+          </div>
         </div>
+      </nav>
+    </header>
+    <div class="row">
+      <div class="container-fluid  col-sm-12 col-md-12 col-lg-6">
+        <div class="card mx-auto">
+          <img src="Images/carne-en-su-jugo.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Carne en su jugo</h5>
+            <div class="container-fluid text-center">
+              <button class="btn btncolor" data-bs-toggle="modal" data-bs-target="#carne1">Receta 1</button>
+              <button class="btn btncolor" data-bs-toggle="modal" data-bs-target="#carne2">Receta 2</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="container-fluid col-sm-12 col-md-12 col-lg-6">
+        <div class="card mx-auto">
+          <img src="Images/pastor.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Tacos al pastor</h5>
+            <div class="container-fluid text-center">
+              <button class="btn btncolor" data-bs-toggle="modal" data-bs-target="#taco1">Receta 1</button>
+              <button class="btn btncolor" data-bs-toggle="modal" data-bs-target="#taco2">Receta 2</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="container-fluid col-sm-12 col-md-12 col-lg-6">
+        <div class="card mx-auto">
+          <img src="Images/crepa.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Crepas</h5>
+            <div class="container-fluid text-center">
+              <button class="btn btncolor" data-bs-toggle="modal" data-bs-target="#crepa1">Crepa napolitana</button>
+              <button class="btn btncolor" data-bs-toggle="modal" data-bs-target="#crepa2">Crepa de nutella</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="container-fluid col-sm-12 col-md-12 col-lg-6">
+        <div class="card mx-auto">
+          <img src="Images/brownie.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Brownies de chocolate</h5>
+            <div class="container-fluid text-center">
+              <button class="btn btncolor" data-bs-toggle="modal" data-bs-target="#brownies1">Receta 1</button>
+              <button class="btn btncolor" data-bs-toggle="modal" data-bs-target="#brownies2">Receta 2</button>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
+  </body>
+
+  <div class="modal fade" id="carne1">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h4 class="modal-title">Carne en su jugo 1</h4>
+          <button class="btn btn-close" data-bs-dismiss="modal"></button>
+        </div>
+        <div class="modal-body">
+          <h5>Ingredientes</h5>
+          <ul>
+            <li>4 tomates verdes</li>
+            <li>2 chiles serranos</li>
+            <li>1 diente de ajo</li>
+            <li>1/2 cebolla picada toscamente</li>
+            <li>Orégano y comino al gusto</li>
+            <li>10 rebanadas de tocino frito</li>
+            <li>4 cebollas cambray</li>
+            <li>1 kilo de bistec de res (en trocitos)</li>
+            <li>3 tazas de caldo de res</li>
+            <li>Sal y pimienta al gusto</li>
+            <li>3 tazas de agua</li>
+            <li>2 tazas de frijoles cocidos con caldo</li>
+          </ul>
+          <h5>Preparacion</h5>
+          <ol>
+            <li>Hierve el agua en una ollita, agrega los tomates y los chiles; cocina por 5 minutos. Retira del fuego y deja enfriar.</li>
+            <li>Frie el tocino en un sartén hasta que se dore ligeramente y suelte su grasa. Retira el tocino, escurre el exceso de grasa y reserva.</li>
+            <li>Sofrie las cebolla cambray en la grasa del tocino, mantén el fuego bajo hasta que se doren uniformemente. Retira y reserva.</li>
+            <li>Licua los tomates y los chiles con el agua donde se cocieron y añade los dientes de ajo, la cebolla, el orégano y el comino. Muele hasta obtener una salsa, puede ser homogénea o martajadita.</li>
+            <li>Corta la carne en trocitos y sella en una cacerola con la grasa del tocino, a fuego medio alto. Sazona con sal y pimienta.</li>
+            <li>Agrega la salsa en cuanto la carne suelte su jugo. Agrega el caldo y cocina por 15 minutos a partir de que rompa el hervor.</li>
+            <li>Sirve y añade el tocino, las cebollas de cambray, sirve con frijoles de la olla o refritos.</li>
+          </ol>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal fade" id="carne2">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h4 class="modal-title">Carne en su jugo 2</h4>
+          <button class="btn btn-close" data-bs-dismiss="modal"></button>
+        </div>
+        <div class="modal-body">
+          <h5>Ingredientes</h5>
+          <ul>
+            <li>225 gramos tocino finamente cortado en cubitos</li>
+            <li>700 gramos carne de res (sirloin)</li>
+            <li>1 cucharada de salsa de soya</li>
+            <li>Pimienta molida fresca para sazonar la carne</li>
+            <li>1 cucharada de jugo de limón</li>
+            <li>2 dientes de ajo picado</li>
+            <li>2 cebollín verde picadito</li>
+            <li>¼ taza de cilantro</li>
+            <li>2 chiles serrano picados</li>
+            <li>4 tazas de caldo de pollo o 4 tazas de agua mezcladas con 4 cucharaditas de caldo de pollo </li>
+            <li>4 tomates verdes (tomatillos, opcional)</li>
+            <li>2 tazas de frijoles bayos cocidos, calientes</li>
+          </ul>
+          <h5>Preparacion</h5>
+          <ol>
+            <li>Corta finamente la carne en rodajas finas y luego en pequeños cubitos; coloca la carne en un recipiente de vidrio. Mezcla la salsa de soya, el jugo de limón y la pimienta y agrega la carne. Deja marinar la carne durante unos minutos mientras se cocina el tocino.</li>
+            <li>Fríe el tocino en un sartén de tamaño mediano a fuego medio hasta que esté crujiente, unos 8 minutos, transfiera el tocino con una cuchara de escurrir a un plato forrado con una toalla de papel y vierta todos menos 1 cucharada de grasa de la olla.</li>
+            <li>Añada la carne a la olla y cocina a fuego medio durante unos 8 minutos, durante este tiempo la carne va a liberar algunos de sus jugos.</li>
+            <li>Mientras la carne se está cocinando, coloca el ajo picado, cebolla, cilantro y chile Serrano en tu licuadora con una taza de caldo y licúa hasta que esté bien mezclado, (Si vas a añadir los tomatillos, agrégalos en este paso).</li>
+            <li>Vierta esta mezcla a la carne, agrega el resto del caldo, y pruebe para sazonar con sal, así como la pimienta molida. Lleva a ebullición y luego reduzca el fuego a bajo, coloca la tapa a la olla y cocine a fuego lento durante unos 20 minutos o más hasta que la carne esté tierna. Este último tiempo de cocción dependerá del corte de carne que estés usando.</li>
+            <li>Para servir divida los frijoles calientes en tazones después de que añadas la carne con su caldo. Deje que todos adornen con el tocino, cebolla picada, cilantro y rábanos junto con algunas gotas de jugo de limón.</li>
+          </ol>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal fade" id="taco1">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h4 class="modal-title">Tacos al pastor</h4>
+          <button class="btn btn-close" data-bs-dismiss="modal"></button>
+        </div>
+        <div class="modal-body">
+          <h5>Ingredientes</h5>
+          <ul>
+            <li>4 chiles desvenados y remojados en agua caliente</li>
+            <li>2 dientes de ajo pelados</li>
+            <li>20 mililitros de vinagre de piña o manzana</li>
+            <li>10 gramos de pasta de achiote</li>
+            <li>1 pizca de comino</li>
+            <li>10 pimientas</li>
+            <li>Sal de grano</li>
+            <li>1/2 pierna de cerdo en filetes muy finos</li>
+            <li>250 gramos de tocino</li>
+            <li>1 piña cortada en trozos</li>
+            <li>1 cebolla en rodajas </li>
+          </ul>
+          <h5>Preparacion</h5>
+          <ol>
+            <li>Mezcla el achiote en el vinagre.</li>
+            <li>Muele los dientes de ajo con la sal e incorpora los cominos y las pimientas hasta que todo quede integrado. Agrega el achiote y poco a poco añade los chiles hasta obtener una pasta suave.</li>
+            <li>Coloca la carne sobre una bandeja para hornear y unta el adobo, agrega una capa de cebolla y otra de tocino hasta que se terminen los ingredientes.</li>
+            <li>Vacía el resto del adobo sobre estas capas de carne y deja reposar por una noche, esto hará que los sabores se integren mejor.</li>
+            <li>Atraviesa la carne con un palo para brocheta y en la punta coloca un trozo grande de piña y en el fondo de la bandeja varios trozos.</li>
+            <li>Cubre y mete al horno por ½ hora de 200 a 220° centígrados. Retira la cubierta y sigue cociendo por ½ hora más.</li>
+          </ol>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal fade" id="taco2">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h4 class="modal-title">Tacos al pastor 2</h4>
+          <button class="btn btn-close" data-bs-dismiss="modal"></button>
+        </div>
+        <div class="modal-body">
+          <h5>Ingredientes</h5>
+          <ul>
+            <li>225 gramos tocino finamente cortado en cubitos</li>
+            <li>700 gramos carne de res (sirloin)</li>
+            <li>1 cucharada de salsa de soya</li>
+            <li>Pimienta molida fresca para sazonar la carne</li>
+            <li>1 cucharada de jugo de limón</li>
+            <li>2 dientes de ajo picado</li>
+            <li>2 cebollín verde picadito</li>
+            <li>¼ taza de cilantro</li>
+            <li>2 chiles serrano picados</li>
+            <li>4 tazas de caldo de pollo o 4 tazas de agua mezcladas con 4 cucharaditas de caldo de pollo </li>
+            <li>4 tomates verdes (tomatillos, opcional)</li>
+            <li>2 tazas de frijoles bayos cocidos, calientes</li>
+          </ul>
+          <h5>Preparacion</h5>
+          <ol>
+            <li>Corta finamente la carne en rodajas finas y luego en pequeños cubitos; coloca la carne en un recipiente de vidrio. Mezcla la salsa de soya, el jugo de limón y la pimienta y agrega la carne. Deja marinar la carne durante unos minutos mientras se cocina el tocino.</li>
+            <li>Fríe el tocino en un sartén de tamaño mediano a fuego medio hasta que esté crujiente, unos 8 minutos, transfiera el tocino con una cuchara de escurrir a un plato forrado con una toalla de papel y vierta todos menos 1 cucharada de grasa de la olla.</li>
+            <li>Añada la carne a la olla y cocina a fuego medio durante unos 8 minutos, durante este tiempo la carne va a liberar algunos de sus jugos.</li>
+            <li>Mientras la carne se está cocinando, coloca el ajo picado, cebolla, cilantro y chile Serrano en tu licuadora con una taza de caldo y licúa hasta que esté bien mezclado, (Si vas a añadir los tomatillos, agrégalos en este paso).</li>
+            <li>Vierta esta mezcla a la carne, agrega el resto del caldo, y pruebe para sazonar con sal, así como la pimienta molida. Lleva a ebullición y luego reduzca el fuego a bajo, coloca la tapa a la olla y cocine a fuego lento durante unos 20 minutos o más hasta que la carne esté tierna. Este último tiempo de cocción dependerá del corte de carne que estés usando.</li>
+            <li>Para servir divida los frijoles calientes en tazones después de que añadas la carne con su caldo. Deje que todos adornen con el tocino, cebolla picada, cilantro y rábanos junto con algunas gotas de jugo de limón.</li>
+          </ol>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal fade" id="crepa1">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h4 class="modal-title">Crepas napolitanas</h4>
+          <button class="btn btn-close" data-bs-dismiss="modal"></button>
+        </div>
+        <div class="modal-body">
+          <h5>Ingredientes</h5>
+          Para la crepa
+          <ul>
+            <li>1 taza de harina</li>
+            <li>1/4 taza de azúcar</li>
+            <li>1/4 cucharadita de sal</li>
+            <li>4 cucharaditas de cocoa en polvo sin azúcar</li>
+            <li>1 1/2 tazas de leche</li>
+            <li>2 huevos</li>
+            <li>2 cucharaditas de extracto de vainilla</li>
+            <li>2 cucharadas soperas de mantequilla derretida + un poco más para engrasar tu sartén (de ser necesario)</li>
+          </ul>
+          Para el relleno
+          <ul>
+            <li>1 lb de fresas frescas (aprox 500 gr)</li>
+            <li>2 tazas de crema batida</li>
+          </ul>
+          Para servir
+          <ul>
+            <li>2 pints Graeter’s Madagascar Vanilla Bean Ice Cream</li>
+            <li>Azúcar glass para decorar</li>
+            <li>Yerbabuena o menta fresca (opcional)</li>
+          </ul>
+          <h5>Preparacion</h5>
+          <ol>
+            <li>Coloca harina, azúcar, sal y cocoa en polvo en la licuadora.</li>
+            <li>Vacía la leche, huevo, vainilla y mantequilla derretida y licúa hasta que todos los ingredientes se mezclen bien.</li>
+            <li>Cubre y mete al refrigerador por al menos 1 hora (si la puedes dejar reposar toda la noche, aún mejor). Mientras tanto lava y rebana las fresas y prepara la crema batida.</li>
+            <li>Toma la mezcla del refrigerador y revuelve bien. Deja a un lado. Verás como las burbujas han desaparecido y la mezcla es tersa.</li>
+            <li>Coloca la sartén sobre fuego medio alto y engrasa con un poco de mantequilla.</li>
+            <li>Vacía 3 cucharadas soperas de la mezcla de crepas y mueve la sartén para que la mezcla cubra todo el fondo.</li>
+            <li>Cuando la crepa se ha cocido verás como las orillas se van separando ligeramente de la sartén (aproximadamente 1 minuto). Toma la espátula de silicón y sepáralas un poco.</li>
+            <li>Voltea la crepa y cocina 20-30 segundos más.</li>
+            <li>Cuando la crepa se está cocinando, vierte las siguientes tres cucharadas de la mezcla en la taza, así estarás lista para vaciarla de jalón en la sartén.</li>
+            <li>Coloca la crepa cocida en un plato y repite hasta que uses toda la mezcla.</li>
+            <li>Sirve inmediatamente, o deja enfriar y guarda en una bolsa de plástico en el refrigerador hasta el momento de servir.</li>
+            <li>Para servir, coloca una crepa en el plato, asegúrate de que el lado pálido esté hacia arriba. Imagina que la crepa tiene dos lineas perpendiculares que forman cuatro secciones triangulares.</li>
+            <li>Esparse una cucharada sopera de crema batida sobre uno de los triángulos. Cubre con las fresas, dobla la crepa encima del relleno.</li>
+            <li>Luego dobla por mitad, así se verán en triángulo. Repite</li>
+            <li>Coloca el número deseado de crepas en un plato, agrega una buena bola del helado cremoso de vainilla, decora con más fresas frescas y menta. Con el colador crea una capa de azúcar glass encima.</li>
+          </ol>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal fade" id="crepa2">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h4 class="modal-title">Crepa de nutella</h4>
+          <button class="btn btn-close" data-bs-dismiss="modal"></button>
+        </div>
+        <div class="modal-body">
+          <h5>Ingredientes</h5>
+          <ul>
+            <li>250 gramos de harina</li>
+            <li>4 huevos</li>
+            <li>1 sobre de azúcar</li>
+            <li>1 pellizco de sal</li>
+            <li>1/2 litros de leche entera</li>
+            <li>50 gramos de mantequilla</li>
+            <li>nutella</li>
+          </ul>
+          <h5>Preparacion</h5>
+          <ol>
+            <li>Echar la harina en una fuente y añadir poco a poco, con la batidora de varillas, la leche, los huevos, la sal y el azúcar.</li>
+            <li>La masa tiene que quedar lisa pero no espesa.</li>
+            <li>La dejamos reposar 5 minutos y a continuación untamos una sartén mediana con la mantequilla y esperamos a que se caliente a fuego mediano.</li>
+            <li>Para hacer la primera crepa hachamos un cucharón sopero y la repartimos para que ocupe toda la base de la sartén.</li>
+            <li>Una vez dorada como 1 minuto a fuego suave la capa de debajo de la crepa la despegamos con ayuda de una espátula y le damos la vuelta para dorar la otra cara.</li>
+            <li>Debemos repetir la operación de engrasar con mantequilla la sartén con cada crepa.</li>
+            <li>Ya que este el crepe listo, la doblamos a la mitad y en esa mitad se unta la nutella.</li>
+            <li>Después se vuelve a doblar a la mitad quedando la crepa en forma de triángulo.</li>
+          </ol>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal fade" id="brownies1">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h4 class="modal-title">Brownies 1</h4>
+          <button class="btn btn-close" data-bs-dismiss="modal"></button>
+        </div>
+        <div class="modal-body">
+          <h5>Ingredientes</h5>
+          <ul>
+            <li>200 g. de mantequilla sin sal</li>
+            <li>180 g. de chocolate negro 70% mínimo (la marca que más les guste)</li>
+            <li>2 huevos</li>
+            <li>225 g. de azúcar normal o glas</li>
+            <li>30 g. cacao en polvo sin azúcar (os recomiendo el del 70%</li>
+            <li>½ cdita. esencia de vainilla</li>
+            <li>120 g. de harina de trigo</li>
+          </ul>
+          <h5>Preparacion</h5>
+          <ol>
+            <li>Derretimos el chocolate troceado y la mantequilla a baño maría. Debemos ir removiendo en todo momento hasta conseguir una crema homogénea. Para hacer el baño maría, pondríamos una cazuela al fuego con agua y encima otra cazuela de forma que no toque el fondo.</li>
+            <li>Si no podemos hacer un baño maría en casa, podemos derretir el chocolate con la mantequilla en el microondas. Calentaríamos el chocolate con la mantequilla durante 2 minutos, retiraríamos, y removeríamos. Repetiríamos la operación varias veces hasta conseguir una mezcla lisa y brillante.</li>
+            <li>Dejaremos que la mezcla de chocolate y mantequilla se temple para continuar el proceso de preparación del brownie de chocolate. Reservamos.</li>
+            <li>En un cuenco batimos los dos huevos con el azúcar, la esencia de vainilla y el punto de sal.</li>
+            <li>Cuando tengamos una crema espumosa la añadimos al chocolate que tenemos reservado y templado. Iremos añadiendo los huevos poco a poco, integrándolos con el chocolate con la ayuda de unas varillas.</li>
+            <li>Incorporamos el cacao sin azúcar y la harina. Mezclamos con las varillas para integrar estos sólidos en la mezcla.</li>
+          </ol>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal fade" id="brownies2">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h4 class="modal-title">Brownies 2</h4>
+          <button class="btn btn-close" data-bs-dismiss="modal"></button>
+        </div>
+        <div class="modal-body">
+          <h5>Ingredientes</h5>
+          <ul>
+            <li>2/3 taza crema de avellana (tipo Nutella)</li>
+            <li>3/4 cocoa en polvo (tipo Hershey's) sin azúcar</li>
+            <li>1/4 cucharadita sal gruesa</li>
+            <li>1 1/4 tazas azúcar granulada</li>
+            <li>3 huevos</li>
+            <li>spray antiadherente para cocina</li>
+            <li>papel pergamino para cocina</li>
+          </ul>
+          <h5>Preparacion</h5>
+          <ol>
+            <li>Precalentar el horno a 350 grados Fahrenheit.</li>
+            <li>Preparar un molde de 8 pulgadas engrasado con PAM (se puede engrasar también untando mantequilla en el molde y luego colocando una capa ligera de harina encima sacudiendo el exceso). Forrar el interior del molde con papel pergamino para cocinar (parchment paper).</li>
+            <li>Calentar la Nutella en un tazón a prueba de calor dentro del horno de microondas por 45 segundos.</li>
+            <li>Combinar la Nutella con el azúcar en un tazón grande para batir usando la batidora a velocidad media luego alta hasta que queden bien incorporados.</li>
+            <li>Añadir los tres huevos batidos y la cocoa. Seguir batiendo por 1 minuto.</li>
+            <li>Vaciar la mezcla al molde empapelado y distribuir con una espátula para que quede bien esparcida.</li>
+            <li>Colocar 4 cucharaditas de Nutella sobre la mezcla, que queden como gotitas o bolitas sobre la preparación. Cubrir todo salpicado con la sal.</li>
+            <li>Meter al horno y hornear de 17 a 20 minutos. Los brownies estarán listas cuando al meter un palillo este salga seco.</li>
+            <li>Enfriar durante aproximadamente una hora .</li>
+          </ol>
+        </div>
+      </div>
+    </div>
+  </div>
+
 </html>

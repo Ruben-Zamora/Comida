@@ -2,6 +2,11 @@ body{
     background-color:CornflowerBlue
 }
 
+img{
+    width: 100%;
+    height: 28rem;
+}
+
 .navbar-brand{
     font-style: italic;
     font-size:xx-large;
@@ -18,7 +23,73 @@ body{
 }
 
 .card{
+    background-color: firebrick;
+    color: black;
+    margin-top: 1rem;
+    padding-top: 1rem;
     width: 90%;
-    background-color: blue;
-    margin-top: 2rem;
+}
+
+.card-title{
+    font-size:x-large;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: bold;
+}
+
+.btncolor{
+    background-color: LightSeaGreen;
+    color: black;
+    font-size: x-large;
+}
+
+.btncolor:hover{
+    background-color: LightSeaGreen;
+    color: black;
+    font-size: x-large;
+}
+
+.btncolor:focus{
+    background-color: LightSeaGreen;
+    color: black;
+    font-size: x-large;
+}
+
+.map-container{
+    overflow:hidden;
+    padding-bottom:56.25%;
+    position:relative;
+    height:0;
+}
+
+.map-container iframe{
+    left:0;
+    top:0;
+    height:100%;
+    width:100%;
+    position:absolute;
+}
+
+.carousel-control-prev:hover{
+    background-color: black;
+    opacity: 75%;
+}
+
+.carousel-control-next:hover{
+    background-color: black;
+    opacity: 75%;
+}
+
+.carousel-control-prev{
+    background-color: black;
+    opacity: 20%;
+}
+
+.carousel-control-next{
+    background-color: black;
+    opacity: 20%;
+}
+
+.modal-content{
+    background-color:chocolate;
+    color: black;
 }

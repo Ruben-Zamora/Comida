@@ -1,81 +1,195 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <title>Recetas favoritas</title>
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
-        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
-        <link rel="stylesheet" href="style.css">
-    </head>
-    <body>
-        <nav class="navbar navbar-expand-lg bg-info">
-            <div class="container-fluid">
-              <label class="navbar-brand col-9">Comidas preferidas</label>
-              <button class="navbar-toggler navbar-toggler-right" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-              </button>
-              <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav flex-row ml-auto justify-content-between">
-                  <li class="nav-item">
-                    <a class="btn btn-danger" aria-current="page" href="index.html">
-                        <i class="bi-box2-heart"></i> Inicio
-                    </a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="btn btn-danger" href="recetas.html">
-                        <i class="bi bi-cup-hot"></i> Recetas
-                    </a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="btn btn-danger active disabled" href="informacion.html">
-                        <i class="bi-bookmarks-fill"></i> Historia
-                    </a>
-                  </li>
-                </ul>
-              </div>
-            </div>
-          </nav>
-    </body>
+  <head>
+    <title>Recetas favoritas</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <header>
+      <nav class="navbar navbar-expand-lg bg-info">
+        <div class="container-fluid">
+          <label class="navbar-brand col-8">Comidas preferidas</label>
+          <button class="navbar-toggler navbar-toggler-right" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav flex-row ml-auto justify-content-between">
+              <li class="nav-item">
+                <a class="btn btn-danger" aria-current="page" href="index.html">
+                    <i class="bi-box2-heart"></i> Inicio
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="btn btn-danger" href="recetas.html">
+                    <i class="bi bi-cup-hot"></i> Recetas
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="btn btn-danger active disabled" href="informacion.html">
+                    <i class="bi-bookmarks-fill"></i> Ubicaciones
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
     <div class="row">
-        <div class="col-sm-12 col-md-6 col-lg-6">
-          <div class="card">
-            <img src="..." class="card-img-top" alt="...">
-            <div class="card-body">
-              <h5 class="card-title">Card title</h5>
-              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-              <a href="#" class="btn btn-primary">Go somewhere</a>
+      <div class="container-fluid  col-sm-12 col-md-12 col-lg-6">
+        <div class="card mx-auto">
+          <img src="Images/carne-en-su-jugo.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Carne en su jugo</h5>
+            <div id="carouselcarne" class="carousel slide" data-bs-interval="false" >
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <div id="map-container-google-1" class="z-depth-1-half map-container" style="height: 400px">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3762.8262903831123!2d-102.05118965021249!3d19.419910046055847!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x842de241f108da21%3A0x49f2fc7f556b9046!2sEl%20Rinc%C3%B3n%20de%20Aguililla!5e0!3m2!1ses!2smx!4v1662503217306!5m2!1ses!2smx" frameborder="0"
+                      style="border:0" allowfullscreen></iframe>
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <div id="map-container-google-2" class="z-depth-1-half map-container" style="height: 400px">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d8950.241291047001!2d-102.06184751227809!3d19.407526945548554!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x842de2639ef8d313%3A0xe91ade97ece8104!2sCalifornia%20Grill%20Fish%20n&#39;%20Wings!5e0!3m2!1ses!2smx!4v1662504087106!5m2!1ses!2smx" frameborder="0"
+                      style="border:0" allowfullscreen></iframe>
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <div id="map-container-google-3" class="z-depth-1-half map-container" style="height: 400px">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3762.638898640219!2d-102.07434595021236!3d19.428002045799253!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x842e09e028d57525%3A0x639dbe5b0ab8e011!2sLa%20Troje%20Del%20Lago!5e0!3m2!1ses!2smx!4v1662504166955!5m2!1ses!2smx" frameborder="0"
+                      style="border:0" allowfullscreen></iframe>
+                  </div>
+                </div>
+              </div>
+              <button class="carousel-control-prev" type="button" data-bs-target="#carouselcarne" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+              </button>
+              <button class="carousel-control-next" type="button" data-bs-target="#carouselcarne" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+              </button>
             </div>
           </div>
         </div>
-        <div class="col-sm-12 col-md-6 col-lg-6">
-          <div class="card">
-            <img src="..." class="card-img-top" alt="...">
-            <div class="card-body">
-              <h5 class="card-title">Card title</h5>
-              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-              <a href="#" class="btn btn-primary">Go somewhere</a>
+      </div>
+      <div class="container-fluid col-sm-12 col-md-12 col-lg-6">
+        <div class="card mx-auto">
+          <img src="Images/pastor.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Tacos al pastor</h5>
+            <div id="carouselTacos" class="carousel slide" data-bs-interval="false">
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <div id="map-container-google-4" class="z-depth-1-half map-container" style="height: 400px">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3762.7565158766533!2d-102.05012335021247!3d19.42292344596031!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x842de24100000001%3A0x86675630cf0842e4!2sTaquer%C3%ADa%20La%20Revoluci%C3%B3n%20Del%20Taco!5e0!3m2!1ses!2smx!4v1662563115521!5m2!1ses!2smx" frameborder="0"
+                      style="border:0" allowfullscreen></iframe>
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <div id="map-container-google-5" class="z-depth-1-half map-container" style="height: 400px">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3762.8167049357244!2d-102.05600795021248!3d19.420324046042712!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x842de2695bd5ad2d%3A0xc47059f58571a70a!2sTAQUERIA%20RODRIGUEZ!5e0!3m2!1ses!2smx!4v1662563184294!5m2!1ses!2smx" frameborder="0"
+                      style="border:0" allowfullscreen></iframe>
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <div id="map-container-google-6" class="z-depth-1-half map-container" style="height: 400px">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3762.9544594956733!2d-102.05419545021256!3d19.414373546231314!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x842de2665780c263%3A0x2badeeb4edba6a70!2sLas%20Brasitas!5e0!3m2!1ses!2smx!4v1662563240783!5m2!1ses!2smx" frameborder="0"
+                      style="border:0" allowfullscreen></iframe>
+                  </div>
+                </div>
+              </div>
+              <button class="carousel-control-prev" type="button" data-bs-target="#carouselTacos" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+              </button>
+              <button class="carousel-control-next" type="button" data-bs-target="#carouselTacos" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+              </button>
             </div>
           </div>
         </div>
-        <div class="col-sm-12 col-md-6 col-lg-6">
-          <div class="card">
-            <img src="..." class="card-img-top" alt="...">
-            <div class="card-body">
-              <h5 class="card-title">Card title</h5>
-              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-              <a href="#" class="btn btn-primary">Go somewhere</a>
+      </div>
+      <div class="container-fluid col-sm-12 col-md-12 col-lg-6">
+        <div class="card mx-auto">
+          <img src="Images/crepa.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Crepas</h5>
+            <div id="carouselCrepas" class="carousel slide" data-bs-interval="false">
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <div id="map-container-google-7" class="z-depth-1-half map-container" style="height: 400px">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3763.120340758588!2d-102.05857605021265!3d19.40720574645843!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x842de263be15a6bd%3A0xcc4c7929a8f72f44!2zQ3JlcGEgJiBDYWbDqSAiTWFyaWUgWXVsaWUi!5e0!3m2!1ses!2smx!4v1662563322010!5m2!1ses!2smx" frameborder="0"
+                      style="border:0" allowfullscreen></iframe>
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <div id="map-container-google-8" class="z-depth-1-half map-container" style="height: 400px">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3762.589750308406!2d-102.07556135021233!3d19.43012384573191!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x842e091a2b2ef12b%3A0x9d0a17216f7db8ea!2sCREPERIE%20CAPRICHOS!5e0!3m2!1ses!2smx!4v1662563363255!5m2!1ses!2smx" frameborder="0"
+                      style="border:0" allowfullscreen></iframe>
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <div id="map-container-google-9" class="z-depth-1-half map-container" style="height: 400px">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3763.096840752748!2d-102.0493672502126!3d19.408221346426153!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x842de322e0c0ca49%3A0x87f883fd281a4b39!2sLa%20Casa%20de%20las%20Crepas%20y%20los%20Waffles!5e0!3m2!1ses!2smx!4v1662563406737!5m2!1ses!2smx" frameborder="0"
+                      style="border:0" allowfullscreen></iframe>
+                  </div>
+                </div>
+              </div>
+              <button class="carousel-control-prev" type="button" data-bs-target="#carouselCrepas" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+              </button>
+              <button class="carousel-control-next" type="button" data-bs-target="#carouselCrepas" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+              </button>
             </div>
           </div>
         </div>
-        <div class="col-sm-12 col-md-6 col-lg-6">
-          <div class="card">
-            <img src="..." class="card-img-top" alt="...">
-            <div class="card-body">
-              <h5 class="card-title">Card title</h5>
-              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-              <a href="#" class="btn btn-primary">Go somewhere</a>
+      </div>
+      <div class="container-fluid col-sm-12 col-md-12 col-lg-6">
+        <div class="card mx-auto">
+          <img src="Images/brownie.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Brownies de chocolate</h5>
+            <div id="carouselBrownie" class="carousel slide" data-bs-interval="false">
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <div id="map-container-google-10" class="z-depth-1-half map-container" style="height: 400px">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3763.079161749313!2d-102.05575625021267!3d19.40898534640203!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x842e09d606078533%3A0x228ed71cb6a1d7e0!2sPasteleria%20y%20Cafe%20Petiviere!5e0!3m2!1ses!2smx!4v1662563505220!5m2!1ses!2smx" frameborder="0"
+                      style="border:0" allowfullscreen></iframe>
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <div id="map-container-google-11" class="z-depth-1-half map-container" style="height: 400px">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3762.8527419572833!2d-102.05569535021243!3d19.41876754609198!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x842de2693c269cab%3A0x281788b6f8749ec6!2sMuffin%20Magic!5e0!3m2!1ses!2smx!4v1662563551365!5m2!1ses!2smx" frameborder="0"
+                      style="border:0" allowfullscreen></iframe>
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <div id="map-container-google-12" class="z-depth-1-half map-container" style="height: 400px">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15051.252255772886!2d-102.07882359218746!3d19.420481300000002!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x842de2722433e931%3A0x2a12c4edb65ae842!2sCaf%C3%A9%20La%20Lucha%2C%20S.A.%20de%20C.V.!5e0!3m2!1ses!2smx!4v1662563619343!5m2!1ses!2smx" frameborder="0"
+                      style="border:0" allowfullscreen></iframe>
+                  </div>
+                </div>
+              </div>
+              <button class="carousel-control-prev" type="button" data-bs-target="#carouselBrownie" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+              </button>
+              <button class="carousel-control-next" type="button" data-bs-target="#carouselBrownie" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+              </button>
             </div>
           </div>
         </div>
+      </div>
     </div>
+  </body>
 </html>
